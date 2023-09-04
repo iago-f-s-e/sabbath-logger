@@ -6,5 +6,5 @@
 
     }
   },
-  "exclude": ["**/*.test.ts", "fixtures", "node_modules"]
+  "exclude": ["**/*.(test|spec).ts", "fixtures", "node_modules"]
 }
