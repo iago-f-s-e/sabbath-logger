@@ -4,6 +4,15 @@
   "main": "index.js",
   "types": "*/**/*.d.ts",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.prod.json && tsc-alias -p tsconfig.prod.json",
+    "lint": "eslint '*/**/*.{js,ts}'",
+    "prepare": "husky install",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --coverage",
+    "type:check": "yarn tsc --noEmit",
+    "type:watch": "yarn tsc -w --noEmit"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
