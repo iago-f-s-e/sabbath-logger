@@ -8,11 +8,18 @@ module.exports = {
   ],
   coverageProvider: "v8",
   moduleNameMapper: {
+    "@domain/(.*)": "<rootDir>/src/lib/domain/$1",
+    "@infra/(.*)": "<rootDir>/src/lib/infra/$1",
+    "@fixtures/?(.*)": "<rootDir>/fixtures/$1"
   },
   testMatch: [
     "<rootDir>/src/**/*.(test|spec).ts"
   ],
   testPathIgnorePatterns: [
     "/node_modules/"
-  ]
+  ],
+
+  transform: {
+    "^.+\\.(t|j)s$": "@swc/jest",
+  },
 };

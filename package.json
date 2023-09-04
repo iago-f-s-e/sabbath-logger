@@ -5,7 +5,7 @@
   "types": "*/**/*.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.prod.json && tsc-alias -p tsconfig.prod.json",
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "lint": "eslint '*/**/*.{js,ts}'",
     "prepare": "husky install",
     "test": "jest --passWithNoTests",
@@ -16,6 +16,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "@swc/core": "^1.3.82",
+    "@swc/jest": "^0.2.29",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "^5.59.11",

@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-
+      "@domain/*": ["lib/domain/*"],
+      "@infra/*": ["lib/infra/*"]
     }
   },
   "exclude": ["**/*.(test|spec).ts", "fixtures", "node_modules"]

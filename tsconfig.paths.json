@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-
+      "@domain/*": ["./src/lib/domain/*"],
+      "@infra/*": ["./src/lib/infra/*"],
+      "@fixtures/*": ["fixtures/*"]
     }
   }
 }
