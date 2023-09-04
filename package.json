@@ -1,0 +1,7 @@
+{
+  "name": "@sabbath/logger",
+  "version": "0.0.0",
+  "main": "index.js",
+  "types": "*/**/*.d.ts",
+  "license": "MIT"
+}
