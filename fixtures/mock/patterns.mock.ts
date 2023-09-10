@@ -1,16 +1,17 @@
-
+import {ErrorMock} from "@fixtures/mock/error.mock";
 
 export const errorPatternMock = {
   timestamp: new Date().toISOString(),
+  uid: 'test',
   trigger: {
     name: 'test',
     method: 'test'
   },
   error: {
-    name: 'test',
+    name: ErrorMock.name,
     kind: 'test',
-    message: 'test',
-    stack: 'test'
+    message: ErrorMock.message,
+    stack: ErrorMock.stack as string
   },
-  params: 'test'
+  params: [{ foo: 'foo', bar: { name: 'bar' } }, 'test']
 };

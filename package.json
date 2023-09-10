@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "example": "ts-node -r tsconfig-paths/register --transpile-only",
     "lint": "eslint '*/**/*.{js,ts}'",
     "prepare": "husky install",
     "test": "jest --passWithNoTests",
