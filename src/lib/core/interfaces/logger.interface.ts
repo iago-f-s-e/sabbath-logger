@@ -1,4 +1,4 @@
-import { ErrorPatternDTO } from '@domain/dtos';
+import { ErrorPatternDTO } from '@core/dtos';
 
 export interface Logger {
   error(err: ErrorPatternDTO): void;

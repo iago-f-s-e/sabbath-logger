@@ -1,8 +1,9 @@
-import { ErrorDTO } from '@domain/dtos/error.dto';
-import { TriggerDTO } from '@domain/dtos/trigger.dto';
+import { ErrorDTO } from '@core/dtos/error.dto';
+import { TriggerOutDTO } from '@core/dtos/trigger.dto';
 
-export type ErrorPatternDTO = Pick<TriggerDTO, 'params'> & {
+export type ErrorPatternDTO = Pick<TriggerOutDTO, 'params'> & {
+  uid: string;
   timestamp: string;
-  trigger: Omit<TriggerDTO, 'params'>;
+  trigger: Omit<TriggerOutDTO, 'params'>;
   error: ErrorDTO;
 };

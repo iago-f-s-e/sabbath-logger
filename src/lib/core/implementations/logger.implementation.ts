@@ -1,5 +1,5 @@
-import { ErrorPatternDTO } from '@domain/dtos';
-import { Logger } from '@domain/interfaces';
+import { ErrorPatternDTO } from '@core/dtos';
+import { Logger } from '@core/interfaces';
 
 export abstract class LoggerImp implements Logger {
   protected readonly COLOR_DANGER = '\x1b[31m';
