@@ -1,6 +1,6 @@
-import { ErrorPatternDTO } from '@domain/dtos';
-import { LoggerImp } from '@domain/implementations';
-import { Logger } from '@domain/interfaces';
+import { ErrorPatternDTO } from '@core/dtos';
+import { LoggerImp } from '@core/implementations';
+import { Logger } from '@core/interfaces';
 
 export class LoggerStdout extends LoggerImp implements Logger {
   public override error(err: ErrorPatternDTO): void {

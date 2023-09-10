@@ -1,1 +1,1 @@
-export {} from './logger.stdout';
+export { LoggerStdout } from './logger.stdout';

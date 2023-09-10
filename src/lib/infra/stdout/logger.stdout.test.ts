@@ -1,4 +1,4 @@
-import { Logger } from '@domain/interfaces';
+import { Logger } from '@core/interfaces';
 import { errorPatternMock } from '@fixtures/mock/patterns.mock';
 import { LoggerStdout } from '@infra/stdout/logger.stdout';
 
