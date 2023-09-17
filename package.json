@@ -4,6 +4,31 @@
   "main": "index.js",
   "types": "*/**/*.d.ts",
   "license": "MIT",
+  "homepage": "https://github.com/iago-f-s-e/sabbath-logger#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iago-f-s-e/sabbath-logger.git"
+  },
+  "contributors": [
+    {
+      "name": "Iago Fagundes",
+      "url": "https://github.com/iago-f-s-e"
+    }
+  ],
+  "keywords": [
+    "log",
+    "logs",
+    "logger",
+    "logging",
+    "standardization",
+    "catch",
+    "excpection",
+    "excpections",
+    "handling",
+    "exception handling",
+    "decorator",
+    "function"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "example": "ts-node -r tsconfig-paths/register --transpile-only",
