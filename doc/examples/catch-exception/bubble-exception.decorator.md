@@ -1,4 +1,4 @@
-# customErrorInstance - Decorator
+# bubbleException - Decorator
 
 If you provide the `bubbleException = true` option, we will log the error, and rethrow the exception with the same error instance received.
 
