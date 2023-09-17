@@ -5,8 +5,8 @@ export type CatchExceptionOptions = CommonOptions & {
   bubbleException?: boolean;
   returnOnException?: (
     exception: any,
-    context: any,
+    context?: any,
     ...params: any[]
   ) => unknown | Promise<unknown>;
-  onException?: (exception: any, context: any) => void | Promise<void>;
+  onException?: (exception: any, context?: any) => void | Promise<void>;
 };
