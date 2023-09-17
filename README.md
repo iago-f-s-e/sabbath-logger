@@ -21,7 +21,7 @@ We provide two ways to catch exceptions:
 - the `CatchException` decorator to use in your methods
 - the `catchException` function so that you don't have to use classes to use the library
 
-#### Opções de configuração
+#### Configuration options
 | Option              | Type     | Required/Optional | Default value | Description                                                                                                                                                 | Example using function                                                                                                           | Example using decorator                                                                                                           |
 |---------------------|----------|-------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | bubbleException     | boolean  | Optional          | true          | If set to true, the original exception will be thrown after logging, allowing the exception to continue its propagation.                                    | [Example](https://github.com/iago-f-s-e/sabbath-logger/blob/main/doc/examples/catch-exception/bubble-exception.function.md)      | [Example](https://github.com/iago-f-s-e/sabbath-logger/blob/main/doc/examples/catch-exception/bubble-exception.decorator.md)      |
