@@ -1,4 +1,4 @@
-# onException - Decorator
+# onException - Function
 
 A function that will be triggered so that you can handle the exception the way you want.
 The function gives you the error, the context of your class and all the parameters received, respectively.
