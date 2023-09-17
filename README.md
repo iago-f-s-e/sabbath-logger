@@ -16,7 +16,7 @@ yarn add @sabbath/logger
 - Catch Transaction [TODO]
 - Validation [TODO]
 
-### Catch exceptions
+### Catch exception
 We provide two ways to catch exceptions:
 - the `CatchException` decorator to use in your methods
 - the `catchException` function so that you don't have to use classes to use the library
