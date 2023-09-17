@@ -1,5 +1,5 @@
 import { catchExceptionFactory } from '@core/factories';
-import { getLogParams } from '@core/helpers';
+import { getLogParams, persistsMetadata } from '@core/helpers';
 import { LoggerService } from '@core/services';
 import { CatchExceptionOptions } from '@core/types';
 
@@ -33,6 +33,8 @@ export function CatchException(
     const factory = catchExceptionFactory(method, { log, setParams, setTrigger }, options);
 
     descriptor.value = options?.isSync ? factory.syncFn : factory.asyncFn;
+
+    persistsMetadata(descriptor.value, method);
 
     return descriptor;
   };
