@@ -38,7 +38,7 @@ We provide two ways to catch exceptions:
 ```typescript
 import { CatchException } from '@sabbath/logger';
 
-class UserController {
+export class UserController {
   @CatchException({
     kind: 'Application',
   })
@@ -52,7 +52,7 @@ class UserController {
 ```typescript
 import { catchException } from '@sabbath/logger';
 
-const getUserById = catchException(async (id: string) => {
+export const getUserById = catchException(async (id: string) => {
   // Your logic for getting a user
 }, {
   kind: 'Application',
@@ -70,7 +70,7 @@ async function handleGetUserById(id: string) {
   // Your logic for getting a user
 }
 
-const getUserById = catchException(handleGetUserById, options);
+export const getUserById = catchException(handleGetUserById, options);
 ```
 
 #### Log output
