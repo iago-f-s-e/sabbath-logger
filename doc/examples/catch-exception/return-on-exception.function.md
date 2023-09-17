@@ -1,11 +1,12 @@
-# returnOnException - Decorator
+# returnOnException - Function
 
 A function that will be trigged so that ou can handle the exception as you wish.
 The function gives you the error, the context of your class and all the parameters received, respectively.
 The function waits for the new information to be returned.
 
-_If provided, the `bubbleException` and `onException` options will be ignored._
 _Since you're using it with functions, the context will always be undefined._
+
+_If provided, the `bubbleException` and `onException` options will be ignored._
 
 ---
 Suppose you have an API to search for products by store. If the search fails, your API should return a list of default products for the specific store in the request.
